@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* MENÚ */
+header {
+    width: 100%;
+    background: linear-gradient(to right, #ffc6e0, #eac9ff);
+    padding: 12px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.menu {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #6b207a;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #5b2d70;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #b3007d;
+}
+
+/* CONTENIDO */
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.tarjeta {
+    display: flex;
+    gap: 30px;
+    background: #fff0fb;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+.portada img {
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.info h1 {
+    color: #742c85;
+    font-size: 2rem;
+}
+
+.info h3 {
+    color: #525252;
+    margin-bottom: 15px;
+}
+
+.descripcion {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+    background: #ffeaff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.datos p {
+    margin: 5px 0;
+    color: #4d4d4d;
+}
+
+strong {
+    color: #742c85;
+}
+.btn {
+    text-decoration: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold; 
+    transition: 0.3s ease;
+    margin: 10px;
+    display: inline-block;
+}
+
+.btn.epub {
+    background-color: #00c851;
+}
+
+.btn.pdf {
+    background-color: #ff4444;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
