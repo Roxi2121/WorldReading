@@ -1,0 +1,152 @@
+/* GENERAL */
+body {
+    margin: 0;
+    background: #faf7ff;
+    font-family: Arial, sans-serif;
+}
+
+/* MENÚ SUPERIOR */
+header {
+    width: 100%;
+    background: #e9d2ff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #6a28b8;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #6a28b8;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #9b4ae8;
+}
+
+nav a.activo {
+    color: #9b4ae8;
+    border-bottom: 2px solid #9b4ae8;
+}
+
+/* ----- SECCIÓN SOBRE ----- */
+.sobre {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.sobre h2 {
+  font-size: 2em;
+  color: #5a3bf5;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.sobre h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #a890ff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.sobre .contenedor {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  padding: 40px;
+  text-align: justify;
+  animation: fadeIn 1s ease;
+}
+
+.sobre p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.sobre .final {
+  font-style: italic;
+  color: #444;
+}
+
+/* ----- SECCIÓN MISIÓN, VISIÓN Y VALORES ----- */
+.mvv {
+  background: #f3f0ff;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.mvv h2 {
+  font-size: 1.9em;
+  color: #5a3bf5;
+  margin-bottom: 40px;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.tarjeta {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(90, 59, 245, 0.15);
+}
+
+.tarjeta h3 {
+  color: #5a3bf5;
+  margin-bottom: 10px;
+}
+
+.tarjeta p {
+  color: #555;
+}
+
+.tarjeta ul {
+  list-style: none;
+  padding: 0;
+  color: #555;
+}
+
+.tarjeta ul li {
+  margin: 6px 0;
+  position: relative;
+}
+
+.tarjeta ul li::before {
+  content: "★";
+  color: #b093ff;
+  margin-right: 8px;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

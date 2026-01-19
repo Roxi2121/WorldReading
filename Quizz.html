@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - WorldReading</title>
+  <link rel="stylesheet" href="quizz.css">
+</head>
+<body>
+
+  <header>
+    <h1>WorldReading</h1>
+    <p>Encuentra el libro perfecto para ti 📖</p>
+  </header>
+
+  <section id="quiz" class="seccion-quiz">
+    <h2>📚 Descubre tu próxima lectura</h2>
+    <p>Responde las preguntas y obtén una recomendación personalizada.</p>
+
+    <!-- Pregunta 1 -->
+    <div id="p1" class="pregunta">
+      <h3>1️⃣ ¿Qué tipo de historia prefieres?</h3>
+      <a href="#p2a" class="opcion">Aventura y fantasía</a>
+      <a href="#p2b" class="opcion">Romance y emociones</a>
+      <a href="#p2c" class="opcion">Misterio y suspenso</a>
+      <a href="#p2d" class="opcion">Reflexión y desarrollo personal</a>
+    </div>
+
+    <!-- Pregunta 2 (fantasía) -->
+    <div id="p2a" class="pregunta">
+      <h3>2️⃣ ¿Qué prefieres en un protagonista?</h3>
+      <a href="#r-fantasia" class="opcion">Valiente y soñador</a>
+      <a href="#r-fantasia" class="opcion">Curioso y aventurero</a>
+    </div>
+
+    <!-- Pregunta 2 (romance) -->
+    <div id="p2b" class="pregunta">
+      <h3>2️⃣ ¿Qué tipo de romance disfrutas más?</h3>
+      <a href="#r-romance" class="opcion">Juvenil y dulce</a>
+      <a href="#r-romance" class="opcion">Trágico y profundo</a>
+    </div>
+
+    <!-- Pregunta 2 (misterio) -->
+    <div id="p2c" class="pregunta">
+      <h3>2️⃣ ¿Qué ambiente prefieres?</h3>
+      <a href="#r-misterio" class="opcion">Ciudades oscuras</a>
+      <a href="#r-misterio" class="opcion">Lugares antiguos</a>
+    </div>
+
+    <!-- Pregunta 2 (reflexivo) -->
+    <div id="p2d" class="pregunta">
+      <h3>2️⃣ ¿Qué tema te inspira más?</h3>
+      <a href="#r-reflexivo" class="opcion">Superación personal</a>
+      <a href="#r-reflexivo" class="opcion">Espiritualidad</a>
+    </div>
+
+    <!-- RESULTADOS -->
+    <div id="r-fantasia" class="resultado">
+      <h3>✨ Tu recomendación:</h3>
+      <h2>“Harry Potter y la piedra filosofal”</h2>
+      <p><strong>Autora:</strong> J.K. Rowling</p>
+      <img src="harry poter.jpeg" alt="Harry Potter" class="img-libro">
+      <p>Una historia mágica de amistad, valentía y autodescubrimiento.</p>
+      <a href="#quiz" class="btn">Reiniciar quiz</a>
+    </div>
+
+    <div id="r-romance" class="resultado">
+      <h3>💖 Tu recomendación:</h3>
+      <h2>“Bajo la misma estrella”</h2>
+      <p><strong>Autor:</strong> John Green</p>
+      <img src="bajolamismaestrella-5b24c8948e1b6e00360df110.jpg" alt="Bajo la misma estrella" class="img-libro">
+      <p>Una conmovedora historia sobre el amor, la vida y la esperanza.</p>
+      <a href="#quiz" class="btn">Reiniciar quiz</a>
+    </div>
+
+    <div id="r-misterio" class="resultado">
+      <h3>🕵️ Tu recomendación:</h3>
+      <h2>“El código Da Vinci”</h2>
+      <p><strong>Autor:</strong> Dan Brown</p>
+      <img src="codigo davinci.jfif" alt="El código Da Vinci" class="img-libro">
+      <p>Intriga, secretos y una aventura intelectual a través del arte y la religión.</p>
+      <a href="#quiz" class="btn">Reiniciar quiz</a>
+    </div>
+
+    <div id="r-reflexivo" class="resultado">
+      <h3>🌿 Tu recomendación:</h3>
+      <h2>“El Alquimista”</h2>
+      <p><strong>Autor:</strong> Paulo Coelho</p>
+      <img src="el alquimista.jfif" alt="El Alquimista" class="img-libro">
+      <p>Una fábula sobre seguir los sueños, escuchar el corazón y encontrar tu destino.</p>
+      <a href="#quiz" class="btn">Reiniciar quiz</a>
+    </div>
+
+    <!-- Enlace inicial -->
+    <a href="#p1" class="btn" style="margin-top:20px;">Comenzar quiz</a>
+  </section>
+
+  <footer>
+    © 2025 WorldReading — Hecho con ❤️ para los amantes de los libros
+  </footer>
+
+</body>
+</html>

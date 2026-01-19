@@ -1,0 +1,100 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f0efff;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #7b5cfb, #b093ff);
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.seccion-quiz {
+  background: #ffffff;
+  padding: 60px 30px;
+  border-radius: 30px;
+  max-width: 750px;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.seccion-quiz h2 {
+  color: #5a3bf5;
+  margin-bottom: 10px;
+}
+
+.pregunta, .resultado {
+  display: none;
+  background: #faf9ff;
+  padding: 25px;
+  border-radius: 20px;
+  margin-top: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.pregunta:target,
+.resultado:target {
+  display: block;
+  animation: aparecer 0.5s ease;
+}
+
+.opcion {
+  display: block;
+  background-color: #f1edff;
+  color: #333;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 12px;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+
+.opcion:hover {
+  background-color: #dcd3ff;
+}
+
+.resultado h2 {
+  color: #5a3bf5;
+  margin-top: 10px;
+}
+
+.img-libro {
+  width: 120px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #5a3bf5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #7a5cff;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+  font-size: 0.9em;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
