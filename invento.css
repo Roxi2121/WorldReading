@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: #f7f4ff;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #f3d1ff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* Menú */
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #663399;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a.activo {
+    font-weight: 700;
+    color: #000;
+}
+
+/* Contenedor principal */
+.contenedor {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Título */
+.contenedor h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #4c2c77;
+}
+
+/* Lista de géneros */
+.lista-generos {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.lista-generos li {
+    margin: 10px 0;
+}
+
+.lista-generos a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+    color: #663399;
+    border: 2px solid #e0c5ff;
+    transition: 0.3s;
+}
+
+.lista-generos a:hover {
+    background: #e9d7ff;
+    transform: translateY(-3px);
+}
